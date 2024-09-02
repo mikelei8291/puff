@@ -61,9 +61,64 @@ main a {
     text-decoration: none;
 }
 
+main article {
+    font-size: 1.2rem;
+    margin: auto;
+    max-width: 1400px;
+}
+
+main article h1.title {
+    font-size: 4.6rem;
+}
+
+main article ul {
+    margin-bottom: 5rem;
+    padding-left: 40px;
+}
+
+main article ul li::marker {
+    content: "\2022   ";
+    padding-right: 10px;
+}
+
+main article ul li {
+    margin: 0.5em 0;
+}
+
+main .column-2 {
+    display: flex;
+    gap: 6vw;
+}
+
+main .column-2 > div {
+    flex: 1 0 calc(50% - 3vw);
+}
+
+.about-bg {
+    width: 100%;
+}
+
+main article blockquote {
+    font-size: 1.4rem;
+    padding: 10rem 0;
+}
+
+main article blockquote::before {
+    content: "“";
+    font-size: 4rem;
+    line-height: .8;
+}
+
+main article blockquote::after {
+    content: "„";
+    font-size: 4rem;
+}
+
 footer {
     font-family: "Space Grotesk", sans-serif;
     letter-spacing: -.05em;
+    margin: auto;
+    max-width: 1400px;
     padding: 1vw 0;
     text-align: right;
 }
