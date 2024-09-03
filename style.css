@@ -106,7 +106,13 @@ main .column-2 > div {
 
 main article blockquote {
     font-size: 1.4rem;
+    opacity: 0;
     padding: 10rem 0;
+    transition: opacity .5s ease-in;
+}
+
+main article blockquote.visible {
+    opacity: 1;
 }
 
 main article blockquote::before {

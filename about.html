@@ -39,5 +39,16 @@
         <div>© 2024 Gau × WAn</div>
         <div>Website Design: Thunder Studio</div>
     </footer>
+    <script>
+        const quote = document.querySelector("blockquote");
+        (new IntersectionObserver((entries, o) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    quote.classList.add("visible");
+                    o.disconnect();
+                }
+            })
+        }, { threshold: 0.5 })).observe(quote);
+    </script>
 </body>
 </html>
