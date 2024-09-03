@@ -90,6 +90,12 @@ main .column-2 {
     gap: 6vw;
 }
 
+@media (orientation: portrait) {
+    main .column-2 {
+        flex-direction: column;
+    }
+}
+
 main .column-2 > div {
     flex: 1 0 calc(50% - 3vw);
 }
